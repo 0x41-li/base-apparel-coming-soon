@@ -166,8 +166,13 @@ input:focus:invalid ~ .error-icon {
 .error-icon {
   display: none;
   position: absolute;
-  top: 1rem;
+  top: 0.9rem;
   right: 130px;
+}
+@media screen and (min-width: 1024px) {
+  .error-icon {
+    right: 100px;
+  }
 }
 button {
   position: absolute;
@@ -182,6 +187,7 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  box-shadow: 0px 10px 20px hsla(0, 36%, 70%, 0.5);
 }
 @media screen and (min-width: 1024px) {
   button {
