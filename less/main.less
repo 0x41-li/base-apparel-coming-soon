@@ -176,12 +176,23 @@ input:focus:invalid ~ .form__error{
   display: block;
 }
 
+input:focus:invalid ~ .error-icon {
+  display: block;
+}
+
 .form__error {
   display: none;
   padding: 0.4rem 1.4rem;
   color: @primary-color;
   font-weight: 600;
   font-size: 0.8em;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 130px;
 }
 
 button {
